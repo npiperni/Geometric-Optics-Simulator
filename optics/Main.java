@@ -1,15 +1,11 @@
 package optics;
 
-import controller.MenuBarController;
+import controller.MainController;
 import javafx.application.Application;
 import javafx.scene.Scene;
-import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.VBox;
-import javafx.scene.shape.Line;
-import javafx.scene.shape.Polygon;
 import javafx.stage.Stage;
 import model.MenuItems;
-import view.MenuBarView;
+import view.MainView;
 
 
 public class Main extends Application {
@@ -17,18 +13,22 @@ public class Main extends Application {
 
     @Override
     public void start(Stage stage) throws Exception{
-        MenuBarView mbt = new MenuBarView();
+        MainView mbt = new MainView();
         MenuItems mi = new MenuItems();
-        MenuBarController mbc = new MenuBarController(mi, mbt);
+        MainController mbc = new MainController(mi, mbt);
 
-        BorderPane bp = new BorderPane(mbt);
+        //BorderPane bp = new BorderPane();
+        //MainView mv = new MainView();
+
+        //bp.setTop(mbt);
+        //bp.setCenter(mv);
 
         s = stage;
 
-        bp.getStylesheets().add("style.css");
+        mbt.getStylesheets().add("style.css");
 
-        stage.setTitle("Menu Bar Test");
-        Scene scene = new Scene(bp, 900, 600);
+        stage.setTitle("Geometric Optics");
+        Scene scene = new Scene(mbt, 900, 600);
         stage.setScene(scene);
         stage.show();
     }
