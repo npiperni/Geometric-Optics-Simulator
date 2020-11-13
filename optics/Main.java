@@ -17,12 +17,6 @@ public class Main extends Application {
         MenuItems mi = new MenuItems();
         MainController mbc = new MainController(mi, mbt);
 
-        //BorderPane bp = new BorderPane();
-        //MainView mv = new MainView();
-
-        //bp.setTop(mbt);
-        //bp.setCenter(mv);
-
         s = stage;
 
         mbt.getStylesheets().add("style.css");
