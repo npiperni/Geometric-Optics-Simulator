@@ -23,6 +23,7 @@ public class SettingsView extends Pane {
 
     private TableColumn firstCol = new TableColumn("Object Distance");
     private TableColumn secondCol = new TableColumn("Object Height");
+    private TableColumn thirdCol = new TableColumn("Focal Point");
     private TableColumn fourthCol = new TableColumn("Type of Lens");
     private TableColumn deleteCol = new TableColumn();
 
@@ -61,7 +62,6 @@ public class SettingsView extends Pane {
         secondCol.setMinWidth(100);
         secondCol.setCellValueFactory(new PropertyValueFactory<DataModel, Double>("objectHeight"));
 
-        TableColumn thirdCol = new TableColumn("Focal Point");
         thirdCol.setMinWidth(100);
         thirdCol.setCellValueFactory(new PropertyValueFactory<DataModel, Double>("focalPoint"));
 
