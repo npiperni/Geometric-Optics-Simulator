@@ -7,7 +7,6 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
-import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Font;
 import model.MenuItems;
 
@@ -20,7 +19,7 @@ public class MainView extends BorderPane {
     private Label objectDistance, objectHeight, imageHeight, imageDistance, focalLength, mag, typeOfLens, typeOfImage;
 
     // This is just a placeholder
-    private Rectangle animationScene;
+
 
     public MainView(){
         super();
@@ -41,10 +40,6 @@ public class MainView extends BorderPane {
         mb.getMenus().addAll(fileMenu, helpMenu);
 
         this.setTop(mb);
-
-        animationScene = new Rectangle(600, 400, Color.LIGHTGRAY);
-        animationScene.setStroke(Color.BLACK);
-        animationScene.relocate(20,30);
 
         objectDistance = new Label("DO: ");
         objectDistance.setFont(Font.font(24));
@@ -84,8 +79,11 @@ public class MainView extends BorderPane {
 
         vb.relocate(650, 60);
 
+        AnimationView animationView = new AnimationView();
+        animationView.relocate(20,30);
+
         Pane mainScreen = new Pane();
-        mainScreen.getChildren().addAll(animationScene,vb);
+        mainScreen.getChildren().addAll(animationView,vb);
 
         this.setCenter(mainScreen);
     }
