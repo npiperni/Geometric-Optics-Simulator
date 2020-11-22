@@ -56,19 +56,19 @@ public class SettingsView extends Pane {
     }
 
     public void setUpTable(){
-        firstCol.setMinWidth(100);
+        firstCol.setPrefWidth(100);
         firstCol.setCellValueFactory(new PropertyValueFactory<DataModel, Double>("objectDistance"));
 
-        secondCol.setMinWidth(100);
+        secondCol.setPrefWidth(100);
         secondCol.setCellValueFactory(new PropertyValueFactory<DataModel, Double>("objectHeight"));
 
-        thirdCol.setMinWidth(100);
+        thirdCol.setPrefWidth(100);
         thirdCol.setCellValueFactory(new PropertyValueFactory<DataModel, Double>("focalPoint"));
 
-        firstCol.setMinWidth(100);
+        fourthCol.setPrefWidth(100);
         fourthCol.setCellValueFactory(new PropertyValueFactory<DataModel, String>("lensType"));
 
-        deleteCol.setMinWidth(100);
+        deleteCol.setPrefWidth(100);
 
         tv.setItems(list);
         tv.getColumns().addAll(firstCol, secondCol, thirdCol, fourthCol, deleteCol);
