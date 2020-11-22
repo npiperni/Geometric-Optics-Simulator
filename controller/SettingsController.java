@@ -1,12 +1,12 @@
 package controller;
 
+import java.util.ArrayList;
+
 import javafx.event.Event;
 import javafx.event.EventHandler;
 import javafx.scene.control.Button;
 import model.DataModel;
 import view.SettingsView;
-
-import java.util.ArrayList;
 
 public class SettingsController {
 
@@ -17,6 +17,8 @@ public class SettingsController {
         data = d;
         settingsView = v;
 
+        data = TableDataController.getTableData();
+
         setData();
 
         settingsView.setAddButtonHandler(new AddButtonHandler());
@@ -24,17 +26,21 @@ public class SettingsController {
     }
 
     public void setData() {
+
         settingsView.getData().clear();
         settingsView.getData().addAll(data);
+
     }
 
     class AddButtonHandler implements EventHandler {
 
         @Override
         public void handle(Event event) {
-            DataModel dataModel = new DataModel(settingsView.getObjDistanceValue(), settingsView.getObjHeightValue(), settingsView.getFocalPointValue(), settingsView.getTypeOfLensValue());
+            DataModel dataModel = new DataModel(settingsView.getObjDistanceValue(), settingsView.getObjHeightValue(),
+                    settingsView.getFocalPointValue(), settingsView.getTypeOfLensValue());
             data.add(dataModel);
             setData();
+            TableDataController.saveTableData(data);
         }
     }
 
@@ -42,7 +48,9 @@ public class SettingsController {
 
         @Override
         public void handle(Event event) {
-            Button b = (Button)event.getSource();
+            Button b = (Button) event.getSource();
+
+            TableDataController.deleteEntry(data.get(Integer.parseInt(b.getId())).getObjectDistance());
 
             data.remove(Integer.parseInt(b.getId()));
 
