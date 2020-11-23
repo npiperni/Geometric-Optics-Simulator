@@ -41,7 +41,8 @@ public class TableDataController {
 						resultSet.getDouble("object_Distance"),
 						resultSet.getDouble("object_Height"),
 						resultSet.getDouble("focal_Point"),
-						resultSet.getString("lens_TYPE"));
+						resultSet.getString("lens_TYPE"),
+						resultSet.getInt("id"));
 
 				dataList.add(dm);
 
@@ -66,7 +67,7 @@ public class TableDataController {
 		Connection dbConnection = dbp.getConnection(databaseName);
 
 		String query = "INSERT INTO " + tableName
-				+ " (object_Distance, object_Height, focal_Point, lens_TYPE) VALUES (?,?,?,?)";
+				+ " (object_Distance, object_Height, focal_Point, lens_TYPE, id) VALUES (?,?,?,?,?)";
 
 		try {
 
@@ -77,6 +78,7 @@ public class TableDataController {
 				prep.setDouble(2, d.getObjectHeight());
 				prep.setDouble(3, d.getFocalPoint());
 				prep.setString(4, d.getLensType());
+				prep.setInt(5, d.getId());
 
 			}
 			prep.executeUpdate();
@@ -94,7 +96,7 @@ public class TableDataController {
 
 		Connection dbConnection = dbp.getConnection(databaseName);
 
-		String query = "DELETE FROM " + tableName + " WHERE object_Distance=" + id;
+		String query = "DELETE FROM " + tableName + " WHERE id=" + id;
 
 		try {
 

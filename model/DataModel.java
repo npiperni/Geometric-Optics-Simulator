@@ -5,14 +5,16 @@ import javafx.beans.property.SimpleStringProperty;
 
 public class DataModel {
 
+    private final int id;
     private final SimpleDoubleProperty objectDistance, objectHeight, focalPoint;
     private final SimpleStringProperty lensType;
 
-    public DataModel(double objectDistance, double objectHeight, double focalPoint, String lensType) {
+    public DataModel(double objectDistance, double objectHeight, double focalPoint, String lensType, int id) {
         this.objectDistance = new SimpleDoubleProperty(objectDistance);
         this.objectHeight = new SimpleDoubleProperty(objectHeight);
         this.focalPoint = new SimpleDoubleProperty(focalPoint);
         this.lensType = new SimpleStringProperty(lensType);
+        this.id = id;
     }
 
     public double getObjectDistance() {
@@ -46,4 +48,9 @@ public class DataModel {
     public void setLensType(String lensType) {
         this.lensType.set(lensType);
     }
+
+    public int getId() {
+        return id;
+    }
+
 }

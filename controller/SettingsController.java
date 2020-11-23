@@ -36,8 +36,14 @@ public class SettingsController {
 
         @Override
         public void handle(Event event) {
+            int id;
+            if(data.size() == 0) {
+                id = 1;
+            }else {
+                id = data.get(data.size() - 1).getId() + 1;
+            }
             DataModel dataModel = new DataModel(settingsView.getObjDistanceValue(), settingsView.getObjHeightValue(),
-                    settingsView.getFocalPointValue(), settingsView.getTypeOfLensValue());
+                    settingsView.getFocalPointValue(), settingsView.getTypeOfLensValue(), id);
             data.add(dataModel);
             setData();
             TableDataController.saveTableData(data);
@@ -50,7 +56,7 @@ public class SettingsController {
         public void handle(Event event) {
             Button b = (Button) event.getSource();
 
-            TableDataController.deleteEntry(data.get(Integer.parseInt(b.getId())).getObjectDistance());
+            TableDataController.deleteEntry(data.get(Integer.parseInt(b.getId())).getId());
 
             data.remove(Integer.parseInt(b.getId()));
 
