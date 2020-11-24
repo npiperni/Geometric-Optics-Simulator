@@ -9,35 +9,40 @@ import javafx.scene.shape.Shape;
 public class Arrow extends Pane{
     Line line = new Line();
     Polygon triangle = new Polygon(
-    0,0,
-    -10,10,
-    10,10
+            0,0,
+            -10,10,
+            10,10
     );
 
 
 
     public Arrow(double size) {
-     super();
+        super();
 
-     this.line.setStartX(0);
-     this.line.setEndX(0);
-     this.line.setStartY(0);
-     this.line.setEndY(size);
+        this.line.setStartX(0);
+        this.line.setEndX(0);
+        this.line.setStartY(0);
+        this.line.setEndY(size);
 
 
-     if(size < 0){
-        triangle.setRotate(180);
-        triangle.relocate(-10,-10);
-     }
+        if(size < 0){
+            triangle.setRotate(180);
+            triangle.relocate(-10,-10);
+        }
 
-     Shape arrow = Shape.union(line, triangle);
+        Shape arrow = Shape.union(line, triangle);
 
-     this.getChildren().add(arrow);
+        this.getChildren().add(arrow);
 
     }
 
 
     public double getSize(){
-    return this.line.getEndY();
+        return this.line.getEndY();
     }
+
+    public void setSize(double size) {
+        this.line.setEndY(size);
+    }
+
 }
