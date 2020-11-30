@@ -10,7 +10,7 @@ import javafx.scene.text.Text;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import model.MenuItems;
-import optics.Main;
+import optics.Optics;
 import view.MainView;
 import view.SettingsView;
 
@@ -41,10 +41,10 @@ public class MainController {
 			SettingsController sc = new SettingsController(new ArrayList<>(), sv);
 			Stage stage = new Stage();
 
-			Scene scene = new Scene(sv, 500, 500);
+			Scene scene = new Scene(sv, 550, 500);
 
 			stage.initModality(Modality.WINDOW_MODAL);
-			stage.initOwner(Main.getS());
+			stage.initOwner(Optics.getS());
 
 			stage.setTitle("Geometric Optics - Settings");
 			sv.getStylesheets().add("style.css");
@@ -71,7 +71,7 @@ public class MainController {
 			Scene scene = new Scene(root, 400, 300);
 
 			stage.initModality(Modality.WINDOW_MODAL);
-			stage.initOwner(Main.getS());
+			stage.initOwner(Optics.getS());
 
 			stage.setTitle("About");
 			root.getStylesheets().add("style.css");

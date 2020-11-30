@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import javafx.event.Event;
 import javafx.event.EventHandler;
 import javafx.scene.control.Button;
+import javafx.scene.control.RadioButton;
 import model.DataModel;
 import view.SettingsView;
 
@@ -23,6 +24,7 @@ public class SettingsController {
 
         settingsView.setAddButtonHandler(new AddButtonHandler());
         settingsView.setDeleteButtons(new DeleteButtonHandler());
+        settingsView.setSelectButtons(new SelectButtonHandler());
     }
 
     public void setData() {
@@ -61,6 +63,15 @@ public class SettingsController {
             data.remove(Integer.parseInt(b.getId()));
 
             setData();
+        }
+    }
+
+    class SelectButtonHandler implements EventHandler {
+
+        @Override
+        public void handle(Event event) {
+            RadioButton b = (RadioButton) event.getSource();
+
         }
     }
 
