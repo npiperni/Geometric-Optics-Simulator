@@ -18,8 +18,6 @@ public class MainView extends BorderPane {
 
     private Label objectDistance, objectHeight, imageHeight, imageDistance, focalLength, mag, typeOfLens, typeOfImage;
 
-    // This is just a placeholder
-
 
     public MainView(){
         super();

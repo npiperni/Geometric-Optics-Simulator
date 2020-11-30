@@ -21,11 +21,14 @@ public class SettingsView extends Pane {
 
     ObservableList<DataModel> list = FXCollections.observableArrayList();
 
+    private TableColumn selectCol = new TableColumn("SELECT");
     private TableColumn firstCol = new TableColumn("Object Distance");
     private TableColumn secondCol = new TableColumn("Object Height");
     private TableColumn thirdCol = new TableColumn("Focal Point");
     private TableColumn fourthCol = new TableColumn("Type of Lens");
     private TableColumn deleteCol = new TableColumn();
+
+    private final ToggleGroup group = new ToggleGroup();
 
     public SettingsView(){
         super();
@@ -56,6 +59,8 @@ public class SettingsView extends Pane {
     }
 
     public void setUpTable(){
+        selectCol.setPrefWidth(50);
+
         firstCol.setPrefWidth(100);
         firstCol.setCellValueFactory(new PropertyValueFactory<DataModel, Double>("objectDistance"));
 
@@ -71,7 +76,7 @@ public class SettingsView extends Pane {
         deleteCol.setPrefWidth(100);
 
         tv.setItems(list);
-        tv.getColumns().addAll(firstCol, secondCol, thirdCol, fourthCol, deleteCol);
+        tv.getColumns().addAll(selectCol, firstCol, secondCol, thirdCol, fourthCol, deleteCol);
     }
 
     public ObservableList<DataModel> getData() {
@@ -135,6 +140,36 @@ public class SettingsView extends Pane {
             }
         };
         deleteCol.setCellFactory(cellFactoryBT);
+    }
+
+    public void setSelectButtons(EventHandler handler) {
+        Callback<TableColumn<DataModel, String>, TableCell<DataModel, String>> cellFactoryBT = new Callback<TableColumn<DataModel, String>, TableCell<DataModel, String>>() {
+            @Override
+            public TableCell call(final TableColumn<DataModel, String> param) {
+                final TableCell<DataModel, String> cell = new TableCell<DataModel, String>() {
+
+                    @Override
+                    public void updateItem(String item, boolean empty) {
+                        RadioButton rbtn = new RadioButton();
+
+                        super.updateItem(item, empty);
+                        if (empty) {
+                            setGraphic(null);
+                            setText(null);
+                        } else {
+                            rbtn.setId(String.valueOf(getIndex()));
+                            setGraphic(rbtn);
+                            setText(null);
+                            rbtn.setToggleGroup(group);
+                            rbtn.setOnAction(handler);
+                        }
+                    }
+
+                };
+                return cell;
+            }
+        };
+        selectCol.setCellFactory(cellFactoryBT);
     }
 
 }
