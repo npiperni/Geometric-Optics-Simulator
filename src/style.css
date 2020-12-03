@@ -1,0 +1,28 @@
+.menu .label{
+    -fx-text-fill: white;
+}
+
+.menu-item .label{
+    -fx-text-fill: black;
+}
+
+.menu-bar{
+    -fx-background-color: #2c3e50;
+}
+
+.tab-header-background{
+    -fx-background-color: #2c3e50;
+}
+/*
+.tab {
+    -fx-background-color: #34495e;
+}
+
+.tab{
+    -fx-border-radius: 5 5 5 5;
+    -fx-background-radius: 5 5 5 5;
+}
+*/
+.root{
+    -fx-background-color: #34495e;
+}
