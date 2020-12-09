@@ -1,0 +1,35 @@
+.menu .label{
+    -fx-text-fill: white;
+}
+
+.menu-item .label{
+    -fx-text-fill: black;
+}
+
+.menu-bar{
+    -fx-background-color: #2c3e50;
+}
+
+.tab-header-background{
+    -fx-background-color: #2c3e50;
+}
+
+.root{
+    -fx-background-color: #34495e;
+}
+
+.scroll-pane{
+   -fx-background: #34495e;
+}
+
+.label{
+    -fx-text-fill: white;
+}
+
+.table-view .label{
+    -fx-text-fill: black;
+}
+
+.point .label{
+    -fx-text-fill: black;
+}
