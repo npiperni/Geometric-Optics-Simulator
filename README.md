@@ -1,2 +1,2 @@
-# GUI-Project
-Upload java files in their packages here
+# Vanier GUI-Project Geometric Optics Simulator
+Requires JavaFx
