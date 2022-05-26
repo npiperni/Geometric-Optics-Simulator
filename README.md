@@ -14,8 +14,9 @@
 </ol>
 <h2>Program Description</h2>
 <hr>
+
 <div style="display:flex; flex-direction: row;">
-    <div>
+    <div style="max-width: 60%;">
         <h4>Concept</h4>
         <ul>
             <li>Optical geometry : An abstract concept of determining the path of light rays.</li>
