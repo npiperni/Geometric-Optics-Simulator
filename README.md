@@ -3,7 +3,7 @@
 
 <ol>
     <li>Program Description</li>
-    <ul style="list-style:inside;">
+    <ul>
         <li>Concept Description</li>
         <li>Implementation Descriptions</li>
     </ul>
@@ -15,8 +15,8 @@
 <h2>Program Description</h2>
 <hr>
 
-<div style="display:flex; flex-direction: row;">
-    <div style="max-width: 60%;">
+<div>
+    <div>
         <h4>Concept</h4>
         <ul>
             <li>Optical geometry : An abstract concept of determining the path of light rays.</li>
