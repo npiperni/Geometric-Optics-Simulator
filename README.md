@@ -1,2 +1,10 @@
 # Vanier GUI-Project Geometric Optics Simulator
-Requires JavaFx
+## Outline
+### Program Description
+### Concept Description
+### Implementation Descriptions
+
+### Program Features
+### Team Responsibilities
+### Challenges
+### Learning Outcomes
