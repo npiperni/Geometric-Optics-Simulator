@@ -12,10 +12,10 @@
     <li>Challenges</li>
     <li>Learning Outcomes</li>
 </ol>
-
-<div>
-    <div><h2>Program Description</h2>
+<h2>Program Description</h2>
         <hr>
+<div style="display:flex;">
+    <div>
         <h4>Concept</h4>
         <ul>
             <li>Optical geometry : An abstract concept of determining the path of light rays.</li>
@@ -23,7 +23,7 @@
         </ul>
     </div>
     <div>
-        ![optics geometry](https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Lens3b.svg/360px-Lens3b.svg.png)
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Lens3b.svg/360px-Lens3b.svg.png" alt="" srcset="">
     </div>
 
 </div>
