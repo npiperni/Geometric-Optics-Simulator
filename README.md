@@ -1,10 +1,10 @@
 # Vanier GUI-Project Geometric Optics Simulator
 ## Outline
-### Program Description
+_### Program Description
 ### Concept Description
 ### Implementation Descriptions
 
 ### Program Features
 ### Team Responsibilities
 ### Challenges
-### Learning Outcomes
+### Learning Outcomes_
