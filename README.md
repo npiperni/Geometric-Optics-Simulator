@@ -1,6 +1,6 @@
 # Vanier GUI-Project Geometric Optics Simulator
 ## Outline
-_ Program Description_
+* Program Description *
 ### Concept Description
 ### Implementation Descriptions
 
