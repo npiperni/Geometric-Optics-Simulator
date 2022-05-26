@@ -13,8 +13,8 @@
     <li>Learning Outcomes</li>
 </ol>
 <h2>Program Description</h2>
-        <hr>
-<div style="display:flex;">
+<hr>
+<div style="display:flex; flex-direction: row;">
     <div>
         <h4>Concept</h4>
         <ul>
@@ -23,7 +23,7 @@
         </ul>
     </div>
     <div>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Lens3b.svg/360px-Lens3b.svg.png" alt="" srcset="">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Lens3b.svg/360px-Lens3b.svg.png" alt="geometry optics">
     </div>
-
 </div>
+
