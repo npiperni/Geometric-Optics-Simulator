@@ -142,3 +142,5 @@ A window that displays the error that occurred when accessing the database, allo
 </td>
 </tr>
 </table>
+
+<i>© 2020 | All Rights Reserved - DANG Team</i>
