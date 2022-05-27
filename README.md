@@ -48,14 +48,14 @@
 
 </p>
     <ul>
-        <pre>
-f = focal length
-M = magnification
-h<sub>i</sub> = image height 
-h<sub>o</sub> = image height
-d<sub>i</sub> = object distance
-d<sub>o</sub> = object height
-        </pre>
+        
+        f = focal length
+        M = magnification
+        h<sub>i</sub> = image height 
+        h<sub>o</sub> = image height
+        d<sub>i</sub> = object distance
+        d<sub>o</sub> = object height
+        
     </ul>
 
     <h5><i>Pythagorean theorem : a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup> ; was also used to calculate the ray lengths and trigonometry was used to calculate the ray angles in the animation.</i></h5>
