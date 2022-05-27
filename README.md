@@ -73,10 +73,10 @@ Animation changes depending on the settings chose (i.e: if image is real, the ra
 <table>
 <tr>
 <td>
-<img src="./demo1.png" alt="">
+<img src="./img/demo1.png" alt="">
 </td>
 <td>
-<img src="./demo2.png" alt="">
+<img src="./img/demo2.png" alt="">
 </td>
 </tr>
 </table>
