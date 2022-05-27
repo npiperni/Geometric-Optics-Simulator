@@ -80,3 +80,20 @@ Animation changes depending on the settings chose (i.e: if image is real, the ra
 </td>
 </tr>
 </table>
+
+<h4>Features - Animations</h4>
+<h5><em><u>Settings Table</u></em></h5>
+
+<table>
+<tr>
+<td>
+<ul>
+<li>Multiple custom settings input</li>
+<li>Can select any setting already in table with radio button</li>
+</ul>
+</td>
+<td>
+<img src="./img/db.png" alt="">
+</td>
+</tr>
+</table>
