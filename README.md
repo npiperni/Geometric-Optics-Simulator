@@ -46,7 +46,7 @@
     <sup>h<sub>i</sub></sup>&frasl;<sub>h<sub>o</sub></sub> = 
     -<sup>d<sub>i</sub></sup>&frasl;<sub>d<sub>o</sub></sub>
 
-
+</p>
     <ul>
         <pre>
 f = focal length
@@ -57,7 +57,7 @@ d<sub>i</sub> = object distance
 d<sub>o</sub> = object height
         </pre>
     </ul>
-</p>
+
     <h5><i>Pythagorean theorem : a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup> ; was also used to calculate the ray lengths and trigonometry was used to calculate the ray angles in the animation.</i></h5>
 <hr>
 
