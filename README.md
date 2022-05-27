@@ -1,6 +1,3 @@
-# Vanier GUI-Project Geometric Optics Simulator
-## Outline
-
 <ol>
     <li>Program Description</li>
     <ul>
@@ -12,11 +9,8 @@
     <li>Challenges</li>
     <li>Learning Outcomes</li>
 </ol>
-<h2>Program Description</h2>
 <hr>
-
-
-    
+<h2>Program Description</h2>
 <h4>Concept</h4>
 
 <table>
@@ -45,7 +39,14 @@
 <h5><em><u>Formulas used in calculations</u></em></h5>
 
 <p>
-    1/f = 1/d<sub>i</sub> + 1/d<sub>o</sub>, M = h<sub>i</sub>/h<sub>o</sub> = -d<sub>i</sub>/d<sub>o</sub>
+    <sup>1</sup>&frasl;<sub>f</sub> = 
+    <sup>1</sup>&frasl;<sub>d<sub>i</sub></sub> + 
+    <sup>1</sup>&frasl;<sub>d<sub>o</sub></sub>, 
+    M = 
+    <sup>h<sub>i</sub></sup>&frasl;<sub>h<sub>o</sub></sub> = 
+    -<sup>d<sub>i</sub></sup>&frasl;<sub>d<sub>o</sub></sub>
+
+
     <ul>
         <pre>
 f = focal length
@@ -57,8 +58,25 @@ d<sub>o</sub> = object height
         </pre>
     </ul>
 </p>
-<h5><i>Pythagorean theorem : a2 + b2 = c2 ; was also used to calculate the ray lengths and trigonometry was used to calculate the ray angles in the animation.</i</h5>
+    <h5><i>Pythagorean theorem : a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup> ; was also used to calculate the ray lengths and trigonometry was used to calculate the ray angles in the animation.</i></h5>
+<hr>
 
+<h2>Features</h2>
+<h4>Features - Animations</h4>
+<h5><em><u>Dynamic Animations</u></em></h5>
+<ul>
+    <li>
+        Animation changes depending on the settings chose (i.e: if image is real, the rays will merge on the opposite side of the lens)
+    </li>
+</ul>
 
-
-
+<table>
+    <tr>
+        <td>
+            <img src="" alt="">
+        </td>
+        <td>
+            <img src="" alt="">
+        </td>
+    </tr>
+</table>
