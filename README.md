@@ -1,6 +1,6 @@
 # GUI JavaFX: Geometric Optics Simulator
 ### Team DANG
-
+<hr>
 <ol>
 <li>Program Description</li>
 <ul>
