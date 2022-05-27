@@ -56,9 +56,9 @@ d<sub>i</sub> = object distance
 d<sub>o</sub> = object height
         </pre>
     </ul>
-
-    <h5><i>Pythagorean theorem : a2 + b2 = c2 ; was also used to calculate the ray lengths and trigonometry was used to calculate the ray angles in the animation.</i></h5>
 </p>
+<h5><i>Pythagorean theorem : a2 + b2 = c2 ; was also used to calculate the ray lengths and trigonometry was used to calculate the ray angles in the animation.</i</h5>
+
 
 
 
