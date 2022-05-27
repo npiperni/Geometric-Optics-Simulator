@@ -83,7 +83,7 @@ Animation changes depending on the settings chose (i.e: if image is real, the ra
 
 <h4>Features - Animations</h4>
 <h5><em><u>Settings Table</u></em></h5>
-
+<br>
 <table>
 <tr>
 <td>
