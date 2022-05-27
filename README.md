@@ -116,3 +116,29 @@ Animation changes depending on the settings chose (i.e: if image is real, the ra
 </td>
 </tr>
 </table>
+
+
+<h4>Features - Path - Error Windows</h4>
+<h5><em><u>Path Changer</u></em></h5>
+<table>
+<tr>
+<td>
+<ul>
+<li>
+Allows the user to input a custom file path for the database.
+</li>
+</ul>
+</td>
+<td>
+<img src="./img/dbPath.png" alt="">
+</td>
+</tr>
+<tr>
+<td>
+A window that displays the error that occurred when accessing the database, allowing the user to debug without the use of an IDE
+</td>
+<td>
+<img src="./img/dbError.png" alt="">
+</td>
+</tr>
+</table>
