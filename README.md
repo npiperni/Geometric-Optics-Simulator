@@ -5,9 +5,6 @@
 <li>Implementation Descriptions</li>
 </ul>
 <li>Program Features</li>
-<li>Team Responsibilities</li>
-<li>Challenges</li>
-<li>Learning Outcomes</li>
 </ol>
 <hr>
 <h2>Program Description</h2>
