@@ -110,4 +110,7 @@ Animation changes depending on the settings chose (i.e: if image is real, the ra
 </ul>
 </td>
 </tr>
+<tr>
+<img src="./img/Picture5.png" alt="">
+</tr>
 </table>
