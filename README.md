@@ -83,7 +83,6 @@ Animation changes depending on the settings chose (i.e: if image is real, the ra
 
 <h4>Features - Animations</h4>
 <h5><em><u>Settings Table</u></em></h5>
-<br>
 <table>
 <tr>
 <td>
@@ -94,6 +93,21 @@ Animation changes depending on the settings chose (i.e: if image is real, the ra
 </td>
 <td>
 <img src="./img/db.png" alt="">
+</td>
+</tr>
+</table>
+
+<h4>Features - Theme</h4>
+<h5><em><u>Customizable Theme</u></em></h5>
+<table>
+<tr>
+<td>
+<img src="./img/theme0.png" alt="">
+</td>
+<td>
+<ul>
+<li>The theme of the program can be changed between the ones available</li>
+</ul>
 </td>
 </tr>
 </table>
