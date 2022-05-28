@@ -135,7 +135,11 @@ Allows the user to input a custom file path for the database.
 </tr>
 <tr>
 <td>
+<ul>  
+<li>
 A window that displays the error that occurred when accessing the database, allowing the user to debug without the use of an IDE
+</li>
+</ul>
 </td>
 <td>
 <img src="./img/dbError.png" alt="">
